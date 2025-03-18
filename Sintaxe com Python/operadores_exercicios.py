@@ -1,6 +1,6 @@
 # Exercícios para aprender tipos de Operadores.
 
-# Exercício_01:
+# Exercício_1:
 
 # Exercício_2:
 
