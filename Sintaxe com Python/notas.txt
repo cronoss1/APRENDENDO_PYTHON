@@ -1,0 +1,10 @@
+Metodos:
+.lower() -> Retorna a mesma str em minúsculo/converte tudo para minúsculo.
+.startswith() -> Verifica se uma str começa com determinada str.
+.endswith() -> Verifica se uma str termina com determinada str.
+.sort() -> Ordena a lista em ordem crescente.
+.count() -> Faz a contagem de elementos.
+.upper() -> Retorna a mesma str em maiusculo/converte tudo para maiusculo.
+
+Funcões:
+sum() -> Usada para somar os elementos de uma seguencia, como uma lista, tupla ou conjunto.
