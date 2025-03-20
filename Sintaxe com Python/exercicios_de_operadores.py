@@ -75,7 +75,7 @@ elif numero_1 != numero_2:
 
 numero_1 = int(input("Digite um numero: "))
 operador = input("Qual operação que fazer [+], [-], [*], [/]: ")
-numero_2 = float(input("Digite um segundo numero: "))
+numero_2 = int(input("Digite um segundo numero: "))
 
 if operador == "+":
     numero_1 += numero_2
