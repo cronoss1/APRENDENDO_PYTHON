@@ -104,6 +104,20 @@ else:
 # 25 a 29.9: "Sobrepeso"
 
 # 30 ou mais: "Obesidade"
+"""
+peso = float(input("Digite seu peso em Kg: "))
+altura = float(input("Digite sua altura em metros: "))
+imc = peso / altura ** 2
+
+if imc > 18.5:
+    print("Você está abaixo do peso.")
+elif imc > 18.5 and imc <= 24.9:
+    print("Você esta com o peso normal.")
+elif imc >= 25 and imc <= 29.9:
+    print("Você está com sobre peso.")
+elif imc >= 30:
+    print("Você está com obesidade.")
+"""
 
 # Exercícios com condicionais e loops.
 # 9.Números divisíveis:
@@ -114,9 +128,26 @@ else:
 # "Divisível por 5" se for divisível por 5.
 
 # "Divisível por 3 e 5" se for divisível por ambos.
-
+"""
+for numero in range(1, 101):
+    if numero % 3 == 0:
+        print(f"{numero} é divisível por 3")
+    elif numero % 5 == 0:
+        print(f"{numero} é divisível por 5")
+    elif numero % 3 and numero % 5 == 0:
+        print(f"{numero} é divisível por 3 e 5")
+    else:
+        print(f"{numero} não é divisível por 3 e 5")
+"""
 # 10.Jogo de adivinhação:
 # Crie um jogo em que o programa escolhe um número aleatório entre 1 e 10. Peça ao usuário para adivinhar o número. Use condicionais para informar se o palpite foi alto, baixo ou correto.
+import random # Importando o random
+
+numero = random.randint(1, 10)
+tentativa = int(input("Chute um numero: "))
+
+if numero == tentativa:
+    print("Acertou")
 
 """
 Dicas para resolver os exercícios:
