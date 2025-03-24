@@ -8,3 +8,6 @@ Metodos:
 
 Funcões:
 sum() -> Usada para somar os elementos de uma seguencia, como uma lista, tupla ou conjunto.
+
+O que preciso estudar mais no momento:
+Laços de repetição (For), (While) e como utilizar eles de diversas maneiras.
