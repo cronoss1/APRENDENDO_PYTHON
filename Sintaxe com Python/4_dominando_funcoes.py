@@ -59,3 +59,98 @@ salvar_carro(marca="Fiat", modelo="Palio", ano="2000", placa="ABC-123")
 salvar_carro(**{"marca": "Fiat", "modelo": "Palio", "ano": 2000, "placa": "ABC-123"})
 # Passando um dicionario usando (**) para passar esse valores.
 
+# Parâmetros especiais:
+"""
+Por padrão, argumentos podem ser passados para uma função Python tanto por posição quanto explicitamente pelo nome. 
+Para uma melhor legibilidade e desempenho, faz sentido restringir a maneira pelo qual argumentos possam ser passados, 
+assim um desenvolvedor precisa apenas olhar para a definição da função para determinar se os itens são passados por posição, 
+por posição e nome, ou por nome.
+"""
+# Exemplo Positional only: 
+# Tudo que antes da barra são parâmetros que só podem ser passados por posição
+# tudo depois da barra são parâmetros que podem ser Positional ou Keyword
+def criar_carro(modelo, ano, placa, /, marca, motor, combustivel): 
+    print(modelo, ano, placa, marca, motor, combustivel)
+
+
+criar_carro("Palio", 1999, "ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina")  
+# válido    Positional only           /       Keyword only
+
+criar_carro(modelo="Palio", ano=1999, placa="ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") 
+# inválido    Keyword only           /        Keyword only
+
+# Exemplo Keyword only:
+# Tudo depois do asterisco tem que Keyword only
+def criar_carro(*, modelo, ano, placa, marca, motor, combustivel):
+    print(modelo, ano, placa, marca, motor, combustivel)
+
+
+criar_carro(modelo="Palio", ano=1999, placa="ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") 
+ # válido    Keyword only
+
+criar_carro("Palio", 1999, "ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina")  
+# inválido   Positional only         /        Keyword only
+
+# Exemplo ibrido Keyword and Positional only:
+# Também tem como usar os dois ao mesmo tempo.
+def criar_carro(modelo, ano, placa, /, *, marca, motor, combustivel):
+    print(modelo, ano, placa, marca, motor, combustivel)
+
+criar_carro("Palio", 1999, "ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina")  
+# válido     Positional only         /            Keyword only
+
+criar_carro(modelo="Palio", ano=1999, placa="ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina")  
+# inválido   Keyword only
+
+# Objetos de primeira classe:
+"""
+Em Python tudo é objeto, dessa forma funções também são objetos o que as tornam objetos de primeira classe. 
+Com isso podemos atribuir funções a variáveis, passá-las como parâmetro para funções, usá-las como valores 
+em estruturas de dados (listas, tuplas, dicionários, etc) e usar como valor de retorno para uma função (closures).
+"""
+# Exemplo:
+def somar(a, b): # função somar 
+    return a + b
+
+def exibir_resultado(a, b, funcao): # acessando a função com a função exibir_resultado
+    resultado = funcao(a, b) # Armazenando o resultado na variavel
+    print(f"O resultado da operação {a} + {b} = {resultado}")
+
+exibir_resultado(10, 10, somar)  # O resultado da operação 10 + 10 = 20
+# Fonecendo os valores
+
+# Escopo local e escopo global
+"""
+O escopo global é o escopo mais externo de um programa Python. 
+Variáveis definidas aqui são acessíveis em qualquer lugar do código.
+Variáveis globais são criadas fora de todas as funções
+São acessíveis em qualquer função do módulo
+Permanecem disponíveis durante toda a execução do programa
+"""
+# Exemplo:
+salario = 2000 # Variável Global
+
+def salario_bonus(bonus): # Função
+    global salario # Informando que a variável é global, usar somente quando for necessario
+    salario += bonus
+    return salario
+
+salario_bonus(500)
+
+# Escopo Local
+"""
+Definição: O escopo local existe dentro de funções. 
+Variáveis definidas aqui só são acessíveis dentro da função onde foram criadas.
+Variáveis locais são criadas quando a função é chamada
+São destruídas quando a função termina
+Não são acessíveis fora da função
+"""
+# Exemplo:
+salario = 2000 # Variável Global
+
+def salario_bonus(bonus): # Função
+    global salario  # Informando que a variável e global, usar somente quando for necessario
+    salario += bonus # Varável local que somente pode ser usada dento da função
+    return salario
+
+salario_bonus(500)
