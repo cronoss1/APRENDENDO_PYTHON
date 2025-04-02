@@ -13,7 +13,7 @@ frutas = [] # Lista vazia
 
 letras = list("python") # Uma lista onde cada letra é um elemento
 
-numeros = list(range(10)) # # Uma lista onde sera criando um elemento para cada numero da sequência
+numeros_1 = list(range(10)) # # Uma lista onde sera criando um elemento para cada numero da sequência
 
 carro = ["Ferrari", "F8", 4200000, 2020, 2900, "São Paulo", True] 
 # Uma lista onde tem varios elemento como str, int e boleano. 
@@ -63,8 +63,64 @@ lista = ["p", "y", "t", "h", "o", "n"]
 print(lista[2:])  # ["t", "h", "o", "n"]
 # Vai pegar da posição 2 até a ultima
 print(lista[:2])  # ["p", "y"]
-
+# Vai pegar da posição 0 até o ponto de parada o 2
 print(lista[1:3])  # ["y", "t"]
+# Vai pegar da posição 1 até o ponto de parada o 3
 print(lista[0:3:2])  # ["p", "t"]
+# Vai pegar da posição 0 até o ponto de parada o 3, andando de 2 em 2 posições
 print(lista[::])  # ["p", "y", "t", "h", "o", "n"]
+# Se tudo é vazio, tudo vai ser pego da lista
 print(lista[::-1])  # ["n", "o", "h", "t", "y", "p"]
+
+"""
+Iterar Listas:
+A forma mais comum para percorrer os dados de uma lista é utilizando o comando for.
+"""
+# Exemplo:
+carros = ["gol", "celta", "palio"] # Lista
+
+for carro in carros: # Usando for
+    print(carro) # Monstrando as informações da lista na tela
+
+"""
+Compreensão de Listas:
+A compreensão de lista oferece uma sintaxe mais curta quando você deseja: 
+criar uma nova lista com base nos valores de uma lista existente (filtro) ou gerar uma nova lista 
+aplicando alguma modificação nos elementos de uma lista existente.
+"""
+# Exemplo 1:
+numeros_1 = [1, 30, 21, 2, 9, 65, 34]
+pares = []
+
+for numero in numeros_1:
+    if numero % 2 == 0:
+        pares.append(numero)
+
+# Exemplo 2:
+numeros_2 = [1, 30, 21, 2, 9, 65, 34]
+pares = [numero for numero in numeros_2 if numero % 2 == 0]
+
+# Métodos da Classe list:
+# [].append - Adiciona um novo elemento na lista
+
+# [].clear - Utilizado quando eu quero limpar a minha lista
+
+# [].copy - Ele vai retornar uma copia da lista que não afeta a original
+
+# [].count - Usando para contar quantas vezes um objeto aparece na lista
+
+# [].extend - Usado para adicionar mais de 1 elemento na lista 
+
+# [].index - Usado para saber o index da primeira vez que ele aparece na lista
+
+# [].pop - 
+
+# [].remove - 
+
+# [].reverse - 
+
+# [].sort - 
+
+# len - 
+
+# sorted - 
