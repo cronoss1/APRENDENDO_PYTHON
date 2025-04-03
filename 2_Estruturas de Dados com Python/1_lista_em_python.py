@@ -149,7 +149,7 @@ linguagens = ["python", "js", "c", "java", "csharp"]
 linguagens.index("java")  # 3
 linguagens.index("python")  # 0
 
-# [].pop - Usado para retirar o ultimo elemento da lista
+# [].pop - Usado para retirar o ultimo elemento da lista ou aquele que você expecificar
 linguagens = ["python", "js", "c", "java", "csharp"]
 
 linguagens.pop()  # csharp
