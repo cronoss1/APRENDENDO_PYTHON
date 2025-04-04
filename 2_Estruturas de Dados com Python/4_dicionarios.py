@@ -2,7 +2,9 @@
 
 """
 Criando dicionários:
-Um dicionário é um conjunto não-ordenado de pares chave:valor, onde as chaves são únicas em uma dada instância do dicionário. Dicionários são delimitados por chaves: {}, e contém uma lista de pares chave:valor separada por vírgulas.
+Um dicionário é um conjunto não-ordenado de pares chave:valor, onde as chaves são 
+únicas em uma dada instância do dicionário. Dicionários são delimitados por chaves: {}, 
+e contém uma lista de pares chave:valor separada por vírgulas.
 """
 # Exemplo:
 pessoa = {"nome": "Guilherme", "idade": 28}
@@ -30,7 +32,8 @@ dados  # {"nome": "Maria", "idade": 18, "telefone": "9988-1781"}
 
 """
 Dicionários aninhados:
-Dicionários podem armazenar qualquer tipo de objeto Python como valor, desde que a chave para esse valor seja um objeto imutável como (strings e números).
+Dicionários podem armazenar qualquer tipo de objeto Python como valor, desde que a chave 
+para esse valor seja um objeto imutável como (strings e números).
 """
 # Exemplo:
 contatos = {
@@ -60,7 +63,7 @@ for chave, valor in contatos.items():
 
 # MÉTODOS DA CLASSE DICT
 
-# {}.clear
+# {}.clear: Usado para apagar todos os valores do dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
@@ -71,7 +74,7 @@ contatos = {
 contatos.clear()
 contatos  # {}
 
-# {}.copy
+# {}.copy: Usado para criar uma copia do dicionário
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}
 }
@@ -82,12 +85,12 @@ copia["guilherme@gmail.com"] = {"nome": "Gui"}
 contatos["guilherme@gmail.com"]  # {"nome": "Guilherme", "telefone": "3333-2221"}
 copia["guilherme@gmail.com"]  # {"nome": "Gui"}
 
-# {}.fromkeys
+# {}.fromkeys: Usado para criar chaves no dicionário, com valor ou não.
 dict.fromkeys(["nome", "telefone"])  # {"nome": None, "telefone": None}
 
 dict.fromkeys(["nome", "telefone"], "vazio")  # {"nome": "vazio", "telefone": "vazio"}
 
-# {}.get
+# {}.get: Segunda forma de acessar valores de um dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}
 }
@@ -98,21 +101,21 @@ contatos.get("chave")  # None
 contatos.get("chave", {})  # {}
 contatos.get("guilherme@gmail.com", {})  # {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}
 
-# {}.items
+# {}.items: Usado para retornar uma lista de tuplas.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}
 }
 
 contatos.items()  # dict_items([('guilherme@gmail.com', {'nome': 'Guilherme', 'telefone': '3333-2221'})])
 
-# {}.keys
+# {}.keys: Usado para retornar somente as chaves do nosso dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}
 }
 
 contatos.keys()  # dict_keys(['guilherme@gmail.com'])
 
-# {}.pop
+# {}.pop: Usado para remover uma chave do seu dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}
 }
@@ -120,7 +123,7 @@ contatos = {
 contatos.pop("guilherme@gmail.com")  # {'nome': 'Guilherme', 'telefone': '3333-2221'}
 contatos.pop("guilherme@gmail.com", {})  # {}
 
-# {}.popitem
+# {}.popitem: Usado para remover elementos do seu dicionário na sequência.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}
 }
@@ -128,7 +131,8 @@ contatos = {
 contatos.popitem()  # ('guilherme@gmail.com', {'nome': 'Guilherme', 'telefone': '3333-2221'})
 contatos.popitem()  # KeyError
 
-# {}.setdefault
+# {}.setdefault: Usado para adicionar uma chave e o valor ao dicionário, mas se o mesmos já existirem
+# ele retorna o valor existente.
 contato = {'nome': 'Guilherme', 'telefone': '3333-2221'}
 
 contato.setdefault("nome", "Giovanna")  # "Guilherme"
@@ -137,7 +141,7 @@ contato  # {'nome': 'Guilherme', 'telefone': '3333-2221'}
 contato.setdefault("idade", 28)  # 28
 contato  # {'nome': 'Guilherme', 'telefone': '3333-2221', 'idade': 28}
 
-# {}.update
+# {}.update: Usado para atulizar nosso dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme","telefone": "3333-2221"}
 }
@@ -148,7 +152,7 @@ contatos  # {'guilherme@gmail.com': {'nome': 'Gui'}}
 contatos.update({"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3322-8181"}})
 contatos  # {'guilherme@gmail.com': {'nome': 'Gui'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': '3322-8181'}}
 
-# {}.values
+# {}.values: Usado para retornar todos os valores do nosso dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
@@ -158,7 +162,7 @@ contatos = {
 
 contatos.values()  # dict_values([{'nome': 'Guilherme', 'telefone': '3333-2221'}, {'nome': 'Giovanna', 'telefone': '3443-2121'}, {'nome': 'Chappie', 'telefone': '3344-9871'}, {'nome': 'Melaine', 'telefone': '3333-7766'}])
 
-# in
+# in: Usado para saber se a chave existe no dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
@@ -171,7 +175,7 @@ contatos = {
 "idade" in contatos["guilherme@gmail.com"]  # False
 "telefone" in contatos["giovanna@gmail.com"]  # True
 
-# del
+# del: Usado para remover valores ou toda a chave do dicionário.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
