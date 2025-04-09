@@ -55,9 +55,9 @@ mascara_ptbr = "%d/%m/%Y %a" # Variável com formatação em ptbr
 mascara_en = "%Y-%m-%d %H:%M" # Variável com formatação em en
 
 print(data_hora_atual.strftime(mascara_ptbr)) # Retorna a data e hora atual com a formatação ptbr
-# Variável       modulo  str para time  vai ser convertida   formatação
-#    |             |          |          |                     |
-#    V             V          V          V               V<-----
+# Variável   |   modulo | str para time | vai ser convertida | formatação
+#    |             |          |            |                     |
+#    V             V          V            V               V<-----
 data_convertida = datetime.strptime(data_hora_str, mascara_en) # Formantado a data e hora para en
 print(data_convertida) # Retorna a data e hora convertida em en
 print(type(data_convertida)) # Retorna o tipo da variável data_convertida
@@ -68,8 +68,8 @@ Quando trabalhamos com data e hora, lidar com fusos horários é uma necessidade
 Python facilita isso através do módulo 'pytz'.
 """
 # Exemplo:
-import datetime
-import pytz
+import datetime # Data e hora
+import pytz     # Fuso horários
 
 # Criando datetime com timezone
 d = datetime.datetime.now(pytz.timezone("America/Sao_Paulo"))
