@@ -1,0 +1,41 @@
+Lista de 25 Exercícios: Estruturas Condicionais em Python
+
+Nível 1: Condições Simples (if, else)
+1.	Positivo ou Negativo: Verifique se um número é positivo ou negativo.
+2.	Maioridade: Cheque se uma pessoa tem 18 anos ou mais.
+3.	Par ou Ímpar: Determine se um número é par ou ímpar usando %.
+4.	Acesso Simples: Simule um login (ex.: senha correta é "1234").
+5.	Múltiplo de 5: Verifique se um número é múltiplo de 5.
+---------
+Nível 2: Condições Compostas (and, or)
+6.	Faixa Etária: Classifique uma idade em "criança" (0-12), "adolescente" (13-17) ou "adulto" (18+).
+7.	Triângulo Válido: Verifique se três lados podem formar um triângulo (soma de dois lados > terceiro).
+8.	Acesso com Restrição: Permita acesso apenas se o usuário for "admin" OU tiver idade ≥ 18.
+9.	Número Especial: Cheque se um número é divisível por 2 E por 3.
+10.	Desconto em Compras: Dê 10% de desconto se o valor da compra for ≥ R$100 E o cliente for cadastrado.
+---------
+Nível 3: Condições Aninhadas (if dentro de if)
+11.	Nota Escolar: Classifique uma nota em "A" (≥9), "B" (≥7), "C" (≥5) ou "Reprovado".
+12.	IMC: Calcule o IMC e classifique em "Abaixo do peso", "Normal", "Sobrepeso" ou "Obeso".
+13.	Dia da Semana: Diga se um número (1-7) é dia útil ou fim de semana.
+14.	Validação de Senha: Verifique se a senha tem ≥8 caracteres E contém números E letras.
+15.	Categoria de Produto: Classifique um produto como "Eletrônico", "Alimentício" ou "Outros" baseado em sua entrada.
+---------
+Nível 4: Condições com Operadores Especiais
+16.	Operador in: Verifique se uma letra digitada é vogal (if letra in "aeiou").
+17.	Operador not: Cheque se um número não está entre 0 e 100.
+18.	Ano Bissexto: Determine se um ano é bissexto (regras: divisível por 4, mas não por 100, exceto se por 400).
+19.	Plano de Saúde: Calcule o preço do plano baseado na idade (ex.: <18: R50,18−40:R50,18−40:R70, >40: R$100).
+20.	Horário de Funcionamento: Verifique se um horário (ex.: 14h) está dentro do expediente (9h-18h).
+---------
+Nível 5: Desafios Práticos
+21.	Calculadora Simples: Peça dois números e uma operação (+, -, *, /) e retorne o resultado.
+22.	Verificação de CPF: Cheque se um CPF digitado tem 11 dígitos (apenas validação inicial).
+23.	Jogo de Adivinhação: Compare um número chutado pelo usuário com um número secreto (ex.: 42).
+24.	Empréstimo Bancário: Aprove um empréstimo se o salário for ≥ R$3000 E a idade ≤ 65 anos.
+25.	Classificador de Triângulos: Dados três lados, classifique como "Equilátero", "Isósceles" ou "Escaleno".
+________________________________________
+Dicas para Resolução:
+•	Use input() para interação com o usuário.
+•	Combine operadores lógicos (and, or, not) para condições complexas.
+•	Teste casos extremos (ex.: idade = 0, números negativos).

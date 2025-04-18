@@ -1,0 +1,71 @@
+Lista de 25 Exercícios: Dominando Funções em Python
+
+Nível 1: Funções Básicas
+---------
+1.	Função Simples
+Crie uma função saudacao() que imprima "Olá, mundo!".
+2.	Função com Parâmetro
+Faça uma função dobro(num) que retorne o dobro de um número.
+3.	Função com Múltiplos Parâmetros
+Crie soma(a, b) que retorne a soma de dois números.
+4.	Valor Padrão
+Modifique soma(a, b=0) para que b seja opcional.
+5.	Retorno Múltiplo
+Faça uma função divisao(a, b) que retorne o quociente e o resto.
+---------
+Nível 2: Escopo e Utilidade
+---------
+6.	Variável Global vs Local
+Demonstre a diferença entre variáveis globais e locais em uma função.
+7.	Função com *args
+Crie soma_tudo(*args) que some todos os números passados.
+8.	Função com **kwargs
+Faça info_pessoa(**kwargs) que imprima dados como nome e idade.
+9.	Função Lambda
+Use uma lambda para criar uma função que eleve um número ao quadrado.
+10.	Função Dentro de Função
+Defina externa() que contenha uma função interna() e a chame.
+---------
+Nível 3: Funções como Objetos
+---------
+11.	Função como Argumento
+Crie aplicar_func(funcao, valor) que aplique uma função ao valor (ex: aplicar_func(dobro, 5)).
+12.	Função que Retorna Função
+Faça criar_multiplicador(n) que retorne uma função que multiplique por n.
+13.	Decorador Simples
+Crie um decorador @tempo_execucao que meça o tempo de uma função.
+14.	Decorador com Argumentos
+Faça um decorador @repetir(n) que execute a função decorada n vezes.
+15.	Função Recursiva
+Implemente fatorial(n) usando recursão.
+---------
+Nível 4: Prática Avançada
+---------
+16.	Closure
+Crie uma função contador() que retorne uma função interna para incrementar um valor.
+17.	Memoização
+Use um dicionário para armazenar resultados já calculados em fibonacci(n).
+18.	Função Geradora
+Faça gerador_pares() que retorne números pares infinitamente com yield.
+19.	Anotação de Tipos
+Adicione type hints a uma função media(n1: float, n2: float) -> float.
+20.	Função com Docstring
+Documente uma função area_retangulo() com exemplos de uso.
+---------
+Nível 5: Desafios
+---------
+21.	Map Personalizado
+Implemente sua versão da função map(func, lista).
+22.	Zip Personalizado
+Crie uma função que simule o comportamento de zip().
+23.	Currying
+Transforme soma(a, b, c) em uma série de funções soma(a)(b)(c).
+24.	Dispatch Table
+Use um dicionário para mapear strings a funções (ex: {"+": soma}).
+25.	Função com Estado
+Crie uma função contador_letras() que lembre quantas vezes foi chamada.
+________________________________________
+Dicas para Resolução:
+•	Use return para funções que devem retornar valores.
+•	Para recursão, defina um caso base para evitar loops infinitos.
+•	Experimente nonlocal para closures que modificam variáveis de escopo externo.

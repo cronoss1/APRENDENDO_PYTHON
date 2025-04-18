@@ -1,0 +1,71 @@
+Lista de 25 Exercícios: Manipulação de Strings em Python
+
+Nível 1: Operações Básicas
+---------
+1.	Concatenação
+Peça ao usuário seu nome e sobrenome, concatene-os e mostre o nome completo.
+2.	Tamanho da String
+Calcule e exiba o número de caracteres em uma string digitada pelo usuário.
+3.	Acesso a Caracteres
+Dada uma string, imprima o primeiro e o último caractere.
+4.	String em Maiúsculas/Minúsculas
+Converta uma string para maiúsculas e depois para minúsculas.
+5.	Substituição Simples
+Substitua todas as ocorrências de "a" por "@" em uma string.
+---------
+Nível 2: Fatiamento e Busca
+---------
+6.	Fatiamento (Slicing)
+Dada a string "Python", extraia e imprima "yth".
+7.	Inversão de String
+Inverta uma string usando fatiamento (ex: "hello" → "olleh").
+8.	Contagem de Ocorrências
+Conte quantas vezes a letra "e" aparece em uma string.
+9.	Busca de Substring
+Verifique se a palavra "Python" está presente em uma string.
+10.	Índice de um Caractere
+Encontre a posição da primeira ocorrência da letra "a" em uma string.
+---------
+Nível 3: Métodos de Strings
+---------
+11.	Strip()
+Remova espaços em branco no início e no final de uma string.
+12.	Split()
+Divida a string "Eu amo programar em Python" em uma lista de palavras.
+13.	Join()
+Una a lista ["Python", "é", "incrível"] em uma única string com espaços.
+14.	Startswith()/Endswith()
+Verifique se uma string começa com "http://" e termina com ".com".
+15.	Find() vs Index()
+Use find() e index() para buscar uma substring e compare os resultados quando não encontrada.
+---------
+Nível 4: Formatação e Validação
+---------
+16.	Formatação com f-strings
+Crie uma string formatada que inclua nome e idade (ex: "Maria tem 25 anos").
+17.	Alinhamento de Texto
+Alinhe uma string à direita e à esquerda com 20 caracteres de largura.
+18.	Validação de Dados
+Verifique se uma string representa um número inteiro (ex: "123" → True, "abc" → False).
+19.	Capitalização
+Converta a string "python é poderoso" para "Python É Poderoso".
+20.	Remoção de Pontuação
+Elimine todos os caracteres de pontuação (,!?.) de uma string.
+---------
+Nível 5: Desafios Avançados
+---------
+21.	Criptografia Básica
+Crie uma cifra de César que desloque cada letra por 3 posições (ex: "abc" → "def").
+22.	Palíndromo
+Verifique se uma string é um palíndromo (ex: "radar").
+23.	Contador de Vogais/Consoantes
+Conte quantas vogais e consoantes existem em uma string.
+24.	Extensão de Arquivo
+Extraia a extensão de um nome de arquivo (ex: "arquivo.txt" → "txt").
+25.	Regex Básico
+Use regex para encontrar todas as datas no formato "dd/mm/aaaa" em um texto.
+________________________________________
+Dicas para Resolução:
+•	Utilize métodos nativos como upper(), split(), replace(), etc.
+•	Para desafios como palíndromo, considere tratar espaços e maiúsculas/minúsculas.
+•	Explore a biblioteca re para exercícios com regex.
