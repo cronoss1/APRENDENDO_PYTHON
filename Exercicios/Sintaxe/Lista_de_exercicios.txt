@@ -1,0 +1,42 @@
+Lista de Exercícios: Operadores em Python
+
+Nível 1: Operadores Aritméticos
+1.	Soma básica: Peça dois números ao usuário e imprima a soma.
+2.	Subtração e negativos: Calcule a diferença entre dois números e mostre se o resultado é negativo.
+3.	Multiplicação: Calcule o produto de três números inseridos pelo usuário.
+4.	Divisão e resto: Divida dois números e exiba o resultado e o resto da divisão.
+5.	Potência: Calcule 2 ao quadrado usando o operador **.
+
+Nível 2: Operadores de Comparação
+6.	Maior ou menor: Compare dois números e diga qual é maior ou se são iguais.
+7.	Igualdade vs. identidade: Verifique se dois valores são iguais (==) e se são idênticos (is).
+8.	Verificação de faixa: Cheque se um número está entre 10 e 20.
+9.	Par ou ímpar: Use operadores para verificar se um número é par ou ímpar.
+10.	Divisibilidade: Verifique se um número é divisível por outro usando %.
+
+Nível 3: Operadores Lógicos
+11.	AND: Verifique se uma pessoa tem idade entre 18 e 65 anos para trabalho.
+12.	OR: Cheque se um número é negativo OU maior que 100.
+13.	NOT: Inverta o resultado de uma condição (ex.: "não é fim de semana").
+14.	Combinação lógica: Valide se um usuário digitou um e-mail válido (contém "@" E ".").
+15.	Tabela verdade: Teste as combinações de True e False com and, or, not.
+
+Nível 4: Operadores de Atribuição
+16.	Incremento: Use += para somar 5 a uma variável repetidamente em um loop.
+17.	Decremento: Use -= para contar de 10 até 0.
+18.	Atribuição múltipla: Atribua valores a três variáveis em uma linha.
+19.	Operadores com strings: Use += para concatenar palavras em uma frase.
+20.	Modificação in-place: Multiplique um valor por 3 usando *= sem criar nova variável.
+Nível 5: Operadores de Identidade e Associação
+21.	is vs ==: Compare listas e números para ver diferenças entre identidade e igualdade.
+22.	in com listas: Verifique se um elemento existe em uma lista.
+23.	not in com strings: Cheque se uma letra não está em uma palavra.
+24.	Identidade de objetos: Teste se duas variáveis apontam para o mesmo objeto com is.
+25.	Associação em dicionários: Verifique se uma chave existe em um dicionário usando in.
+________________________________________
+Como usar?
+•	Cada exercício pode ser expandido para incluir input do usuário ou estruturas como if e loops.
+•	Quer que eu detalhe a solação de algum específico ou ajuste o foco (ex.: mais operadores lógicos)?
+É ótimo para praticar a lógica fundamental do Python! 🐍
+
+
