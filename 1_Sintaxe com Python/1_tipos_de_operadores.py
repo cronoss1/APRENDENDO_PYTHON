@@ -172,7 +172,7 @@ print(saldo is not limite) # Se não ocupam a mesma região (False)
 # Operadores de Associação
 # São operadores utilizados para verificar se um objeto está presente em uma sequência.
 # Operador (in) Verificar se está na lista ou variavel
-# Operador (not in) Verifircar se não está na lista ou variavel
+# Operador (not in) Verificar se não está na lista ou variavel
 frutas = ["limão", "manga", "laranja"] 
 
 print("manga" in frutas)
