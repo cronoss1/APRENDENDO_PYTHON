@@ -5,7 +5,7 @@ Nível 1: Operadores Aritméticos
 2.	Subtração e negativos: Calcule a diferença entre dois números e mostre se o resultado é negativo.
 3.	Multiplicação: Calcule o produto de três números inseridos pelo usuário.
 4.	Divisão e resto: Divida dois números e exiba o resultado e o resto da divisão.
-5.	Potência: Calcule 2 ao quadrado usando o operador **.
+5.	Potência: Calcule a raiz quadrada usando o operador **.
 ---------
 Nível 2: Operadores de Comparação
 6.	Maior ou menor: Compare dois números e diga qual é maior ou se são iguais.

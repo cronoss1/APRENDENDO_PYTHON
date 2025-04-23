@@ -19,29 +19,26 @@ else:
 
 # EX_3:
 
-numero = int(input("Digite um numero: "))
-par = numero % 2
+numero_1 = float(input("Digite o primeiro número: "))
+numero_2 = float(input("Digite o segundo número: "))
+numero_3 = float(input("Digite o terceiro número: "))
+multiplicacao = numero_1 * numero_2 * numero_3
 
-if par == 0:
-    print(f"O numero {numero} é par")
-else:
-    print(f"O numero {numero} é impar")
+print(f"Resultado: {multiplicacao}")
 
 # EX_4:
 
-senha = int(input("Digite a senha: "))
-senha_correta = 1234
+numero_1 = float(input("Digite o primeiro número: "))
+numero_2 = float(input("Digite o segundo número: "))
+divisao = numero_1 / numero_2
+resto = numero_1 % numero_2
 
-if senha == senha_correta:
-    print("Acesso Liberado!")
-else:
-    print("Acesso Negado!")
+print(f"\n A divisão de {numero_1} e {numero_2} é {divisao}"
+    f" o resto da divisão é {resto} \n")
 
 # EX_5:
-numero = int(input("Digite um numero: "))
-multiplo = numero % 5
 
-if multiplo == 0:
-    print(f"O numero {numero} é multiplo de 5")
-else:
-    print(f"O numero {numero} não é multiplo de 5")
+numero = float(input("Digite um número: "))
+raiz = numero ** 2
+
+print(f"A raiz quadrada de {numero} é {raiz}")
