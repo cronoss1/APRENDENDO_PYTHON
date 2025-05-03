@@ -1,11 +1,11 @@
 # Exercícios de nível 4:
 
-# EX_1:
+# EX_16:
 
-# EX_2:
+# EX_17:
 
-# EX_3:
+# EX_18:
 
-# EX_4:
+# EX_19:
 
-# EX_5:
+# EX_20:

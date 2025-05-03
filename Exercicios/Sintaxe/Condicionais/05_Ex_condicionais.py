@@ -1,11 +1,11 @@
 # Exercícios de nível 5:
 
-# EX_1:
+# EX_21:
 
-# EX_2:
+# EX_22:
 
-# EX_3:
+# EX_23:
 
-# EX_4:
+# EX_24:
 
-# EX_5:
+# EX_25:
