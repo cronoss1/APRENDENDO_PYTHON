@@ -42,5 +42,9 @@ else:
     print("Dia invalido")
 """ 
 # EX_14:
+senha = input("Digite a senha: ")
 
+
+if senha == 8:
+    if senha == 
 # EX_15:
