@@ -42,9 +42,29 @@ else:
     print("Dia invalido")
 """ 
 # EX_14:
+# isdigit é um método que retorna True se o caractere for um número (0-9)
+# isalpha retorna True se o caractere for letra (a-z ou A-Z)
 senha = input("Digite a senha: ")
 
-
-if senha == 8:
-    if senha == 
+def senha_e_valida(senha):
+    # 1° Verifica o tamanho mínimo
+    if len(senha) < 8:
+        return False  # Senha muito curta!
+    
+    achou_numero = False
+    achou_letra = False
+    
+    # 2° Analisa cada caractere
+    for letra_ou_numero in senha:
+        if letra_ou_numero.isnumeric():  # É um número?
+            achou_numero = True
+        elif letra_ou_numero.isalpha():  # É uma letra?
+            achou_letra = True
+    
+    # 3° Retorna True somente se atender tudo
+    return achou_numero and achou_letra
+if senha_e_valida(senha):
+    print("Senha válida")
+else:
+    print("Senha inválida")
 # EX_15:
