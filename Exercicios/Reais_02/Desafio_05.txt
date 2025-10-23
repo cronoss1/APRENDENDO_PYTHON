@@ -1,0 +1,55 @@
+Desafio #7 — Sistema de Controle de Estoque (nível realista)
+
+Tempo sugerido: 25–30 minutos
+
+Contexto realista:
+
+Você está desenvolvendo um pequeno sistema interno de controle de estoque para uma loja.
+O objetivo é criar um script em Python que permita cadastrar produtos, atualizar quantidades e calcular o valor total em estoque.
+
+Requisitos:
+
+Crie um dicionário chamado estoque, onde a chave é o nome do produto e o valor é outro dicionário com quantidade e preco_unitario.
+
+Implemente funções para:
+
+adicionar_produto(nome, quantidade, preco_unitario)
+
+remover_produto(nome)
+
+atualizar_quantidade(nome, nova_quantidade)
+
+calcular_valor_total()
+
+Exiba um menu interativo no terminal para o usuário escolher ações (usando input).
+
+Mostre sempre o estoque atualizado após cada operação.
+Exemplo de execução (interação):
+=== SISTEMA DE ESTOQUE ===
+1. Adicionar produto
+2. Remover produto
+3. Atualizar quantidade
+4. Mostrar valor total do estoque
+5. Sair
+Escolha uma opção: 1
+Nome do produto: Arroz
+Quantidade: 10
+Preço unitário: 25.0
+✅ Produto adicionado!
+
+Estoque atual:
+{'Arroz': {'quantidade': 10, 'preco_unitario': 25.0}}
+
+Escolha uma opção: 4
+Valor total do estoque: R$250.00
+Critérios de avaliação:
+
+Organização e modularização (funções bem definidas)
+
+Uso correto de estruturas de dados
+
+Clareza no fluxo e mensagens ao usuário
+
+Capacidade de simular um sistema funcional (sem depender de frameworks)
+
+💡 Dica: esse tipo de desafio é muito comum em estágios — ele mostra se você sabe estruturar código e pensar como um desenvolvedor.

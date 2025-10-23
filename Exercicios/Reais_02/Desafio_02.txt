@@ -1,0 +1,30 @@
+🧩 Desafio 2 — Contador de Palavras
+Tempo sugerido: 10–15 minutos
+
+Enunciado:
+Você deve escrever um programa que receba uma string de texto e conte quantas vezes cada palavra aparece.
+
+Requisitos:
+
+Ignorar maiúsculas/minúsculas (ex: “Python” e “python” contam como a mesma palavra).
+
+Ignorar pontuação (vírgulas, pontos, exclamações etc.).
+
+Mostrar o resultado em ordem decrescente de frequência.
+
+Entrada (exemplo):
+texto = "Python é incrível! Python é poderoso, e Python é divertido."
+Saída esperada:
+python: 3
+é: 3
+incrível: 1
+poderoso: 1
+e: 1
+divertido: 1
+Critérios de avaliação:
+
+Uso de dict e contagem eficiente (ex: collections.Counter ou manual)
+
+Limpeza de texto (pontuação e case)
+
+Código legível e comentado

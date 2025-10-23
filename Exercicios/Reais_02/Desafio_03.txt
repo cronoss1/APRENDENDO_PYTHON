@@ -1,0 +1,32 @@
+🧩 Desafio 3 — Filtrando Alunos Aprovados
+Tempo sugerido: 10–15 minutos
+
+Enunciado:
+Você recebeu uma lista de alunos com suas notas.
+Crie um programa que:
+
+Mostre a média geral da turma;
+
+Liste apenas os alunos com nota maior ou igual a 7, ordenados da maior para a menor nota;
+
+Mostre o nome do aluno com a maior nota.
+
+Entrada (exemplo):
+alunos = [
+    {"nome": "Ana", "nota": 9.0},
+    {"nome": "Bruno", "nota": 6.5},
+    {"nome": "Carla", "nota": 8.0},
+    {"nome": "Daniel", "nota": 7.5},
+    {"nome": "Eduardo", "nota": 5.0}
+]
+Saída esperada:
+Média da turma: 7.2
+Aprovados: ['Ana', 'Carla', 'Daniel']
+Melhor aluno: Ana
+Critérios de avaliação:
+
+Uso de listas e dicionários
+
+Filtragem e ordenação com sorted()
+
+Clareza do código e boas práticas

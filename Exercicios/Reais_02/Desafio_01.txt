@@ -1,0 +1,38 @@
+🚀 Desafio #1 — Manipulação de Dados (nível fácil)
+
+Tempo sugerido: 10–15 minutos
+
+Enunciado:
+Você recebeu uma lista de dicionários representando produtos de um e-commerce.
+Cada produto tem o nome, o preço e a categoria.
+
+Escreva um programa que:
+
+Mostre o preço médio dos produtos;
+
+Mostre o produto mais caro e o mais barato;
+
+Crie uma nova lista apenas com os produtos da categoria "Eletrônicos", ordenados por preço decrescente.
+
+Entrada (exemplo):
+produtos = [
+    {"nome": "Celular", "preco": 1500, "categoria": "Eletrônicos"},
+    {"nome": "Camisa", "preco": 100, "categoria": "Vestuário"},
+    {"nome": "Notebook", "preco": 3500, "categoria": "Eletrônicos"},
+    {"nome": "Tênis", "preco": 250, "categoria": "Vestuário"},
+    {"nome": "Fone de Ouvido", "preco": 200, "categoria": "Eletrônicos"}
+]
+Saída esperada (exemplo):
+Preço médio: 1310.0
+Mais caro: Notebook - R$3500
+Mais barato: Camisa - R$100
+Eletrônicos ordenados: ['Notebook', 'Celular', 'Fone de Ouvido']
+Critérios de avaliação:
+
+✅ Clareza e organização do código
+
+✅ Uso correto de listas, dicionários e funções nativas do Python
+
+✅ Nome de variáveis expressivo
+
+✅ Nenhum uso de bibliotecas externas

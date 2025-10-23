@@ -1,0 +1,43 @@
+Desafio #4 — Agrupando Dados de Vendas (nível médio)
+
+Tempo sugerido: 15–20 minutos
+
+Enunciado:
+
+Você recebeu uma lista de vendas contendo o nome do vendedor, o produto e o valor vendido.
+Seu objetivo é agrupar as vendas por vendedor e gerar um relatório de desempenho.
+
+Requisitos:
+
+Calcule o total de vendas de cada vendedor;
+
+Mostre o vendedor com maior faturamento;
+
+Calcule o faturamento total da empresa;
+
+Exiba o resultado de forma organizada.
+Entrada (exemplo):
+vendas = [
+    {"vendedor": "Ana", "produto": "Notebook", "valor": 3500},
+    {"vendedor": "Carlos", "produto": "Mouse", "valor": 100},
+    {"vendedor": "Ana", "produto": "Monitor", "valor": 1200},
+    {"vendedor": "Bruno", "produto": "Teclado", "valor": 300},
+    {"vendedor": "Carlos", "produto": "Headset", "valor": 250}
+]
+Saída esperada:
+Relatório de vendas:
+Ana - R$4700
+Carlos - R$350
+Bruno - R$300
+
+Faturamento total: R$5350
+Melhor vendedor: Ana (R$4700)
+Critérios de avaliação:
+
+Uso de dicionários e loops aninhados
+
+Clareza e legibilidade
+
+Estruturação lógica (ex: usar um dict para acumular totais por vendedor)
+
+💡 Dica: você pode usar um dicionário auxiliar como totais = {} e somar os valores conforme percorre a lista.
