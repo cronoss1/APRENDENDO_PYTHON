@@ -10,6 +10,7 @@ def validar_email(email):
     Retorna True se válido, False caso contrário
     """
     # Sua solução aqui
+    
     pass
 
 # Teste suas soluções:
