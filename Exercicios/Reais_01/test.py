@@ -7,9 +7,20 @@
     Retorna True se válido, False caso contrário
     """
 
-email = "usa@email.br "
+email = input("Digite seu e-mail: ").lower()
 dominios_validos = [".com", ".br", ".org", ".com.br"]
 
+if "@" in email:
+    if not " " in email:
+        if any(dominio in email for domnio in dominios_validos)
+else:
+    print("E-mail inválido: deve conter '@'")
+
+
+
+
+
+"""
 if "@" in email: # Verifica se tem arroba
     print("contem @")
 if " " in email: # Verifica se tem espaços
@@ -20,4 +31,5 @@ if email.find("@") >= 3: # Verifica tamanho antes do '@'
     print("Bom tamanho antes do @")
 else:
     print("Não tem pelo menos 3 caracteres antes do '@'")
-print(len(email))
+"""
+print("Validação concluída")
