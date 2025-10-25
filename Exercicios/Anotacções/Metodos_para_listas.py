@@ -4,17 +4,21 @@ lista = [1, 2, 3]
 # Adicionar elementos
 lista.append(4)           # [1, 2, 3, 4]
 lista.insert(1, 10)       # [1, 10, 2, 3, 4] (insere na posição 1)
+lista.extend([5, 6])     # [1, 10, 2, 3, 4, 5, 6] - Adiciona vários
 
 # Remover elementos
 lista.remove(10)          # [1, 2, 3, 4] (remove pelo valor)
 ultimo = lista.pop()      # [1, 2, 3] (remove último)
+lista.clear()            # [] - Limpa toda a lista
 
 # Informações
 print(len(lista))         # 3 (quantidade)
 print(2 in lista)         # True (verifica se está na lista)
 print(lista.index(2))     # 1 (posição do elemento)
+contagem = lista.count(2) # 2 - Quantas vezes aparece
 
 # Ordenação
 numeros = [3, 1, 4, 2]
 numeros.sort()            # [1, 2, 3, 4] (ordena)
 numeros.reverse()         # [4, 3, 2, 1] (inverte)
+ordenada = sorted(lista) # [1, 2, 5, 8] - Retorna nova lista ordenada
