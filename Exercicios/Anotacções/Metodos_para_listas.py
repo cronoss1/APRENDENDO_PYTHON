@@ -15,7 +15,7 @@ lista.clear()            # [] - Limpa toda a lista
 print(len(lista))         # 3 (quantidade)
 print(2 in lista)         # True (verifica se está na lista)
 print(lista.index(2))     # 1 (posição do elemento)
-contagem = lista.count(2) # 2 - Quantas vezes aparece
+contagem = lista.count(2) # 1 - Quantas vezes aparece
 
 # Ordenação
 numeros = [3, 1, 4, 2]
