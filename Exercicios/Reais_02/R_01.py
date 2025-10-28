@@ -21,6 +21,9 @@ print(barato)
 """
 mais_caro = max(produtos, key=lambda p: p["preco"])
 mais_barato = min(produtos, key=lambda p: p["preco"])
+eletro = [p for p in produtos if p["categoria"] == "Eletrônicos"]
+eletro_ordena = sorted(eletro, key=lambda p: p["preco"], reverse=True)
 print(mais_caro)
 print(mais_barato)
+print(eletro)
 
